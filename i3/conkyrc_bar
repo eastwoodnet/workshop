@@ -22,6 +22,7 @@ conky.config = {
 
 conky.text = [[
  ${upspeed wlan0}/s  ${downspeed wlan0}/s \
+${texeci 1800 curl -s wttr.in/Tianjin\?\format=2} \
  ${cpu cpu0}% \
  ${mem} \
  ${fs_used /} \
